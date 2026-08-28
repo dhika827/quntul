@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fbeee1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        .heart {
+            background-color: #ff4b5c;
+            display: inline-block;
+            height: 30px;
+            margin: 20px 10px;
+            position: relative;
+            transform: rotate(-45deg);
+            width: 30px;
+            animation: pulse 1s infinite;
+        }
+        .heart:before, .heart:after {
+            content: "";
+            background-color: #ff4b5c;
+            border-radius: 50%;
+            height: 30px;
+            position: absolute;
+            width: 30px;
+        }
+        .heart:before { top: -15px; left: 0; }
+        .heart:after { left: 15px; top: 0; }
+
+        @keyframes pulse {
+            0% { transform: rotate(-45deg) scale(1); }
+            50% { transform: rotate(-45deg) scale(1.3); }
+            100% { transform: rotate(-45deg) scale(1); }
+        }
+
+        h1 { color: #2d4059; font-size: 22px; margin-bottom: 10px; }
+        p { color: #4f5b66; font-size: 16px; line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heart"></div>
+        <h1>System.out.println("Aku Sayang Kamu");</h1>
+        <p>Di antara jutaan baris kode dan rumitnya algoritma di dunia, kamu adalah satu-satunya variabel yang bikin hariku selalu sempurna.</p>
+    </div>
+</body>
+</html>
